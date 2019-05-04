@@ -121,6 +121,86 @@
           }
         }
       }
+    },
+    "elm-ui-panels": {
+      "root": "projects/elm-ui-panels",
+      "sourceRoot": "projects/elm-ui-panels/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/elm-ui-panels/tsconfig.lib.json",
+            "project": "projects/elm-ui-panels/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/elm-ui-panels/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/elm-ui-panels/src/test.ts",
+            "tsConfig": "projects/elm-ui-panels/tsconfig.spec.json",
+            "karmaConfig": "projects/elm-ui-panels/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/elm-ui-panels/tsconfig.lib.json",
+              "projects/elm-ui-panels/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "elm-ui-pagination": {
+      "root": "projects/elm-ui-pagination",
+      "sourceRoot": "projects/elm-ui-pagination/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/elm-ui-pagination/tsconfig.lib.json",
+            "project": "projects/elm-ui-pagination/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/elm-ui-pagination/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/elm-ui-pagination/src/test.ts",
+            "tsConfig": "projects/elm-ui-pagination/tsconfig.spec.json",
+            "karmaConfig": "projects/elm-ui-pagination/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/elm-ui-pagination/tsconfig.lib.json",
+              "projects/elm-ui-pagination/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "reusable-components"
