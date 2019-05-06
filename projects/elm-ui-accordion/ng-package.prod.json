@@ -1,7 +1,6 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../dist/elm-ui-panels",
-  "deleteDestPath": false,
+  "dest": "../../dist/elm-ui-accordion",
   "lib": {
     "entryFile": "src/public_api.ts"
   }

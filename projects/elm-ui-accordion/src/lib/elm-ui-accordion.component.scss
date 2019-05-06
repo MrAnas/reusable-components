@@ -1,0 +1,20 @@
+$primery-theme-color:#1e1656;
+$secondary-theme-color:#952d98;
+$quaternary-theme-color:#2a6ebb;
+$quinary-theme-color:#808285;
+
+
+body {
+    .ui-accordion {
+        .ui-accordion-header:not(.ui-state-disabled).ui-state-active {
+            a {background: $secondary-theme-color !important;border-color:$secondary-theme-color !important }
+        }        
+        .ui-accordion-header {
+            &:hover {
+                a {background: $secondary-theme-color !important ;color: #fff !important ;border-color:$secondary-theme-color !important}
+            }
+            a {background: $primery-theme-color;color: #fff}
+        }        
+    }
+} 
+ 

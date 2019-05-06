@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ElmUiPanelsComponent } from './elm-ui-panels.component';
+import { ElmUiAccordionComponent } from './elm-ui-accordion.component';
 
-describe('ElmUiPanelsComponent', () => {
-  let component: ElmUiPanelsComponent;
-  let fixture: ComponentFixture<ElmUiPanelsComponent>;
+describe('ElmUiAccordionComponent', () => {
+  let component: ElmUiAccordionComponent;
+  let fixture: ComponentFixture<ElmUiAccordionComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ElmUiPanelsComponent ]
+      declarations: [ ElmUiAccordionComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ElmUiPanelsComponent);
+    fixture = TestBed.createComponent(ElmUiAccordionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

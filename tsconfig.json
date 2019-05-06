@@ -29,6 +29,18 @@
       ],
       "elm-ui-pagination/*": [
         "dist/elm-ui-pagination/*"
+      ],
+      "elm-ui-accordion": [
+        "dist/elm-ui-accordion"
+      ],
+      "elm-ui-accordion/*": [
+        "dist/elm-ui-accordion/*"
+      ],
+      "elm-ui-fileupload": [
+        "dist/elm-ui-fileupload"
+      ],
+      "elm-ui-fileupload/*": [
+        "dist/elm-ui-fileupload/*"
       ]
     }
   }

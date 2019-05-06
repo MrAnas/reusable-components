@@ -23,6 +23,9 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/themes/nova-light/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -194,6 +197,86 @@
             "tsConfig": [
               "projects/elm-ui-pagination/tsconfig.lib.json",
               "projects/elm-ui-pagination/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "elm-ui-accordion": {
+      "root": "projects/elm-ui-accordion",
+      "sourceRoot": "projects/elm-ui-accordion/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/elm-ui-accordion/tsconfig.lib.json",
+            "project": "projects/elm-ui-accordion/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/elm-ui-accordion/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/elm-ui-accordion/src/test.ts",
+            "tsConfig": "projects/elm-ui-accordion/tsconfig.spec.json",
+            "karmaConfig": "projects/elm-ui-accordion/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/elm-ui-accordion/tsconfig.lib.json",
+              "projects/elm-ui-accordion/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "elm-ui-fileupload": {
+      "root": "projects/elm-ui-fileupload",
+      "sourceRoot": "projects/elm-ui-fileupload/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/elm-ui-fileupload/tsconfig.lib.json",
+            "project": "projects/elm-ui-fileupload/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/elm-ui-fileupload/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/elm-ui-fileupload/src/test.ts",
+            "tsConfig": "projects/elm-ui-fileupload/tsconfig.spec.json",
+            "karmaConfig": "projects/elm-ui-fileupload/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/elm-ui-fileupload/tsconfig.lib.json",
+              "projects/elm-ui-fileupload/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
